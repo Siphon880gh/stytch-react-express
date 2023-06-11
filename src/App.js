@@ -28,7 +28,11 @@ function LoginButton() {
   }
 
   return (
-      <button onClick={()=>{ oauth2(); }}>Login/Signup with Google</button>
+      <>
+        <button onClick={()=>{ oauth2(); }}>Login/Signup with Google</button>
+        <br/>
+        <span>Open DevTools console for more details as you login/signup/logout</span>
+      </>
   );
 }
 
